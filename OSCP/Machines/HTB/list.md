@@ -53,7 +53,7 @@ S. No.	Linux Boxes	Date      	Left
 43	 Armageddon 	22/06/2023	59
 44	 Knife      	23/06/2023	58
 45	 Pit      	24/06/2023	57
-46	 Seal 	         25/06/2023	56
+46	 Seal 	        25/06/2023	56
 47	 Previse 	26/06/2023	55
 48	 Forge      	27/06/2023	54
 49	 Horizontall 	28/06/2023	53
@@ -78,7 +78,7 @@ S. No.	Linux Boxes	Date      	Left
 64	 Scrambled 	15/07/2023	38
 ```
 ```
-# S. No.	Windows Boxes	Date	
+#     S. No.	Windows Boxes	Date	
 1	 legacy 	17/07/2023	37
 2	 Blue    	18/07/2023	36
 3	 Devel 	    19/07/2023	35
@@ -91,7 +91,7 @@ S. No.	Linux Boxes	Date      	Left
 10	 bounty 	26/07/2023	28
 ```
 ```
-11	 jerry  	       28/07/2023	27
+11	 jerry  	     28/07/2023	27
 12	 conceal 	29/07/2023	26
 13	 chatterbox 	30/07/2023	25
 14	 Forest 	31/07/2023	24
