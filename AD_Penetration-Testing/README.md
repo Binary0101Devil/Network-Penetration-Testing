@@ -8,6 +8,6 @@
 <h3> User.txt, pass.txt, RHOST = file:/path of rhost file </h3>
 
 LLMNR/NBT-NS Poising with the help of Responder 
-Tools ---->>>> IMPACKET, RPC-Client, ENUM4LINUX, SMBMAP, SMBCLIENT, KERBRUTE,  
+Tools ---->>>> IMPACKET, RPC-Client, ENUM4LINUX, SMBMAP, SMBCLIENT, KERBRUTE 
 
 Exploit Services by Searchsploit, Exploit DB
