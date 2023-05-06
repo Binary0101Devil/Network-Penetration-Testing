@@ -53,7 +53,7 @@ S. No.	Linux Boxes	Date      	Left
 43	 Armageddon 	22/06/2023	59
 44	 Knife      	23/06/2023	58
 45	 Pit      	24/06/2023	57
-46	 Seal 	       25/06/2023	56
+46	 Seal 	         25/06/2023	56
 47	 Previse 	26/06/2023	55
 48	 Forge      	27/06/2023	54
 49	 Horizontall 	28/06/2023	53
@@ -80,32 +80,32 @@ S. No.	Linux Boxes	Date      	Left
 ```
 # S. No.	Windows Boxes	Date	
 1	 legacy 	17/07/2023	37
-2	 Blue 	18/07/2023	36
-3	 Devel 	19/07/2023	35
+2	 Blue    	18/07/2023	36
+3	 Devel 	    19/07/2023	35
 4	 Optimum 	20/07/2023	34
 5	 Bastard 	21/07/2023	33
 6	 granny 	22/07/2023	32
 7	 Arctic 	23/07/2023	31
 8	 grandpa 	24/07/2023	30
-9	 silo 	25/07/2023	29
+9	 silo     	25/07/2023	29
 10	 bounty 	26/07/2023	28
 ```
 ```
-11	 jerry 	       28/07/2023	27
+11	 jerry  	       28/07/2023	27
 12	 conceal 	29/07/2023	26
 13	 chatterbox 	30/07/2023	25
 14	 Forest 	31/07/2023	24
 15	 BankRobber 	01/08/2023	23
 16	 secnotes 	02/08/2023	22
 17	 Bastion 	03/08/2023	21
-18	 Buff 	       04/08/2023	20
+18	 Buff 	        04/08/2023	20
 19	 Servmon 	05/08/2023	19
 20	 Active 	06/08/2023	18
 ```
 ```
 21	 Remote 	08/08/2023	17
 22	 Fuse       	09/08/2023	16
-23	 Omni 	         10/08/2023	15
+23	 Omni 	        10/08/2023	15
 24	 Worker 	11/08/2023	14
 25	 Love      	12/08/2023	13
 26	 Intelligence 	13/08/2023	12
