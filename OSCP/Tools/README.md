@@ -1,7 +1,3 @@
-<p align="center">
-  <img width="300" height="300" src="https://github.com/0xsyr0/OSCP/blob/main/files/oscp.png">
-</p>
-
 # OSCP Cheat Sheet
 
 Commands, Payloads and Resources for the Offensive Security Certified Professional Certification.
@@ -18,8 +14,7 @@ Here are the link to the [OSCP Exam Guide](https://help.offensive-security.com/h
 
 ## Table of Contents
 
-- 
-[Basics](https://github.com/Binary0101Devil/Network-Penetration-Testing/tree/main/OSCP/Tools#basics)
+- [Basics](https://github.com/Binary0101Devil/Network-Penetration-Testing/tree/main/OSCP/Tools#basics)
 - [Information Gathering](https://github.com/Binary0101Devil/Network-Penetration-Testing/tree/main/OSCP/Tools#information-gathering)
 - [Vulnerability Analysis](https://github.com/Binary0101Devil/Network-Penetration-Testing/tree/main/OSCP/Tools#vulnerability-analysis)
 - [Web Application Analysis](https://github.com/Binary0101Devil/Network-Penetration-Testing/tree/main/OSCP/Tools#web-application-analysis)
