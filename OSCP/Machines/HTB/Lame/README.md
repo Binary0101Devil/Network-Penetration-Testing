@@ -54,11 +54,11 @@ nohup   ---->>>>  is a command that allows a process to continue running in the 
 ```
 script -qc /bin/bash /dev/null 
 ```
-"script" ---->>>>  is a command-line utility that creates a typescript of a terminal session.
-"-q" ---->>>>  flag tells "script" to run in quiet mode, which suppresses extra messages from being printed on the console.
-"c" ---->>>>  flag tells "script" to capture the output to the specified file, in this case, "/dev/null", which is a special file that discards any data written to it.
-"/bin/bash" ---->>>>  is the shell interpreter that executes the commands in the script.
-"/dev/null" ---->>>>  is a special file that discards any data written to it.
+"script" ---->>>>  is a command-line utility that creates a typescript of a terminal session.<br>
+"-q" ---->>>>  flag tells "script" to run in quiet mode, which suppresses extra messages from being printed on the console.<br>
+"c" ---->>>>  flag tells "script" to capture the output to the specified file, in this case, "/dev/null", which is a special file that discards any data written to it.<br>
+"/bin/bash" ---->>>>  is the shell interpreter that executes the commands in the script.<br>
+"/dev/null" ---->>>>  is a special file that discards any data written to it.<br>
 
 #   Exploitation #2: Distcc
 
