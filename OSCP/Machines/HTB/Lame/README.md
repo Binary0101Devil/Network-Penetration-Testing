@@ -59,7 +59,9 @@ script -qc /bin/bash /dev/null
 "c" ---->>>>  flag tells "script" to capture the output to the specified file, in this case, "/dev/null", which is a special file that discards any data written to it.<br>
 "/bin/bash" ---->>>>  is the shell interpreter that executes the commands in the script.<br>
 "/dev/null" ---->>>>  is a special file that discards any data written to it.<br>
-
+```
+python -c 'import pty; pty.spawn("bash")'
+```
 #   Exploitation #2: Distcc
 
 ```
