@@ -52,8 +52,14 @@ nohup   ---->>>>  is a command that allows a process to continue running in the 
 /bin/sh ---->>>>  is the command that will be executed on the target machine after the reverse shell connection is established. It launches a shell session, allowing the attacker to interact with the target machine's command line. <br>
     
 ```
-python3 -c 'import pty;pty.spawn("/bin/bash")' 
+script -qc /bin/bash /dev/null 
 ```
+"script" ---->>>>  is a command-line utility that creates a typescript of a terminal session.
+"-q" ---->>>>  flag tells "script" to run in quiet mode, which suppresses extra messages from being printed on the console.
+"c" ---->>>>  flag tells "script" to capture the output to the specified file, in this case, "/dev/null", which is a special file that discards any data written to it.
+"/bin/bash" ---->>>>  is the shell interpreter that executes the commands in the script.
+"/dev/null" ---->>>>  is a special file that discards any data written to it.
+
 #   Exploitation #2: Distcc
 
 ```
