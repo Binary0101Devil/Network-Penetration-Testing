@@ -75,8 +75,8 @@ S. No.	Linux Boxes	Date      	Left
 63	 Seventeen 	14/07/2023	39
 64	 Scrambled 	15/07/2023	38
 ```
-```
 #        S. No.	Windows Boxes	Date	
+```
 1	 legacy 	17/07/2023	37
 2	 Blue    	18/07/2023	36
 3	 Devel 	        19/07/2023	35
