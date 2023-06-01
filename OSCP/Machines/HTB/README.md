@@ -1,3 +1,1 @@
-
-![image](https://github.com/Binary0101Devil/Network-Penetration-Testing/assets/64678488/73229477-605a-40cc-bc74-f91ae3bd81f1)
-
+![image](https://github.com/Binary0101Devil/Network-Penetration-Testing/assets/64678488/954d225e-1be6-4aae-bef2-9798d9663d30)
