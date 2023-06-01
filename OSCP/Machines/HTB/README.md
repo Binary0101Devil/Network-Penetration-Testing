@@ -101,6 +101,5 @@ S. No.	Windows Boxes	Date	Left	Status
 35	 Acute      	06/09/2023	3	Pending
 36	 Timelapse 	07/09/2023	2	Pending
 37	 StreamIO 	08/09/2023	1	Pending
-```
 ![image](https://github.com/Binary0101Devil/Network-Penetration-Testing/assets/64678488/73229477-605a-40cc-bc74-f91ae3bd81f1)
-```
+
