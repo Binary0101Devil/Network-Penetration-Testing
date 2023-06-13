@@ -157,10 +157,12 @@ Net Share Enumeration ----->>>> netshareenumall/netshareenum
 # <h2> Tool 10. Transfer data from one system to another </h2>
 ```
 1). putty-tools { used if SSH is opened to recevie any file}
-pscp Aniket@192.168.138.116:/Users/Aniket/Desktop/task.txt ~/Documents 
+pscp user@192.168.138.116:/Users/Aniket/Desktop/task.txt ~/Documents 
+
 2). python http.server
 python -m SimpleHTTPServer 9000
 python3 -m http.server 9000
+
 3). Keep
 Website --------------->>>>> https://www.keep.sh/
 CMD --------->>>>> curl --upload-file ./your-file.txt https://free.keep.sh ------>>>>> https://free.keep.sh/9ab64df49d/your-file.txt
