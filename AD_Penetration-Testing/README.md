@@ -113,6 +113,7 @@ enum4linux -P 10.10.0.50
 enum4linux -o 10.10.0.50
 enum4linux -U 10.10.0.50
 enum4linux -a 10.10.0.50
+rpcclient -U '' -N 10.10.10.1
 ```
 # <h2> Tool 4. SMBMAP. </h2>
 ```
